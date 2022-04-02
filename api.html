@@ -1,0 +1,99 @@
+<html><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://media.discordapp.net/attachments/930464719507181588/957946944112713738/222.png?width=603&amp;height=603"></head><body style="background: green;overflow: hidden;background: url(&quot;https://media.discordapp.net/attachments/930464719507181588/957946944112713738/222.png?width=603&amp;height=603&quot;), #7fd97f;background-size: auto, auto;background-blend-mode: screen;background-size: 3%;">
+    <script>function fx(){ 
+        
+        window.location = "http://miceganich.is-great.org";
+        
+        }
+        function fxi(){ 
+        
+        window.location = "http://miceganich.is-great.org/api.html";
+        
+        }
+        function fxr(){ 
+        
+        window.location = "http://miceganich.is-great.org/register.html";
+        
+        }</script>
+    <div style="position: absolute;background: #a1e6a1;width: 100%;height: 8%;left: 0;top: 0;width: 1919px;height: 91px;z-index: 111111;position: relative;background: white;width: 1381px;height: 91px;left: 279px;top: -9px;"><div style="color: #080;font-size: 243%;/*! font-style: oblique; *//*! filter: drop-shadow(-2px 0px 0px #004d00); */position: relative;left: 49%;top: 17%;font-weight: bold;width: 5%;left: 1.5%;text-align: left;cursor: pointer;" onclick="fx()" class="hb">Home<div></div></div><div style="color: #080;font-size: 243%;/*! font-style: oblique; *//*! filter: drop-shadow(-2px 0px 0px #004d00); */position: absolute;left: 49%;top: 17%;font-weight: bold;width: 5%;left: 13%;text-align: left;cursor: pointer;" onclick="fxi();">API<div></div></div><div style="color: #080;font-size: 243%;/*! font-style: oblique; *//*! filter: drop-shadow(-2px 0px 0px #004d00); */position: absolute;left: 49%;top: 17%;font-weight: bold;width: 14%;left: 86%;text-align: left;cursor: pointer;color: #080;font-size: 243%;position: absolute;top: 17%;font-weight: bold;width: 24%;left: 80%;text-align: left;cursor: pointer;" onclick="fxr()">Register Wallet<div></div></div></div>
+    
+    <div style="overflow-y: scroll;position: relative;width: 1918px;top: 9%;left: -7px;height: 91%;background: white;overflow-y: scroll;position: absolute;width: 100%;top: 8%;left: 0;height: 92%;position: relative;width: 1381px;top: -1%;left: 279px;height: 92%;overflow-x: hidden;background: #cae6ca;"><a style="position: relative;top: 10px;font-size: 31px;left: 39px;font-weight: 900;">How to register a wallet</a><a style="position: relative;top: 10px;font-size: 23px;left: 10px;font-weight: 100;"><br>To register a Tiros wallet you would need to send an HTTP POST request to http://miceganich.is-great.org/regg.php<br>Post request must include "name" and "pass" values.</a><a style="position: relative;top: 10px;font-size: 23px;left: 10px;font-weight: 600;"><br>Example shown below in javascript:</a>
+
+<pre class="syntaxbox notranslate" style="
+    background: #a1e6a1;
+    font-size: 19px;
+    position: relative;
+    font-weight: 800;
+">&lt;form action="http://miceganich.is-great.org/regg.php" method="post"&gt;
+  &lt;div&gt;
+    &lt;input name="name" value=""&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input name="pass" value=""&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;button&gt;Send&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre><a style="position: relative;top: 10px;font-size: 31px;left: 39px;font-weight: 900;">How to login check a wallet</a>
+<a style="position: relative;top: 10px;font-size: 23px;left: 10px;font-weight: 100;"><br>To check user credintials you would need to send an HTTP POST request to http://miceganich.is-great.org/Login.php</a><a style="position: relative;top: 10px;font-size: 23px;left: 10px;font-weight: 600;"><br>Example shown below in javascript:</a><pre class="syntaxbox notranslate" style="
+    background: #a1e6a1;
+    font-size: 19px;
+    position: relative;
+    font-weight: 800;
+">&lt;form action="http://miceganich.is-great.org/Login.php" method="post"&gt;
+  &lt;div&gt;
+    &lt;input name="name" value=""&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input name="pass" value=""&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;button&gt;Send&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre><a style="position: relative;top: -34px;font-size: 23px;left: 10px;font-weight: 100;"><br>if succeed, should return "true, wallet: (wallet number, no brackets)"<br>else - "wrong login credentials" </a>
+    <a style="position: relative;top: 5px;font-size: 31px;left: -244px;font-weight: 900;">How to check a currency on the wallet</a><a style="position: relative;top: 10px;font-size: 23px;left: 10px;font-weight: 100;"><br>To check currency on any wallet registered, you would need to send an HTTP POST request to http://miceganich.is-great.org/getcount.php</a><a style="position: relative;top: 10px;font-size: 23px;left: 10px;font-weight: 600;"><br>Example shown below in javascript:</a><pre class="syntaxbox notranslate" style="
+    background: #a1e6a1;
+    font-size: 19px;
+    position: relative;
+    font-weight: 800;
+">&lt;form action="http://miceganich.is-great.org/getcount.php" method="post"&gt;
+  &lt;div&gt;
+    &lt;input name="wallet" value=""&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;button&gt;Send&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre><a style="position: relative;top: 5px;font-size: 31px;left: 39px;font-weight: 900;">How to transfer a currency to an another wallet</a>
+<a style="position: relative;top: 10px;font-size: 23px;left: 10px;font-weight: 100;"><br>To transfer currency to any wallet registered, you would need to send an HTTP POST request to http://miceganich.is-great.org/transferr.php<br>if some credentials are wrong returns "wrong login credentials" or "not enough Torus currency coins", else "New records created successfully".</a><a style="position: relative;top: 10px;font-size: 23px;left: 10px;font-weight: 600;"><br>Example shown below in javascript:</a><pre class="syntaxbox notranslate" style="
+    background: #a1e6a1;
+    font-size: 19px;
+    position: relative;
+    font-weight: 800;
+">&lt;form action="http://miceganich.is-great.org/transferr.php" method="post"&gt;
+  &lt;div&gt;
+   
+    &lt;input name="name" value=""&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   
+    &lt;input name="pass" value=""&gt;
+  &lt;/div&gt;
+    &lt;div&gt;
+   
+    &lt;input name="to" value=""&gt;
+  &lt;/div&gt;
+    &lt;div&gt;
+    
+    &lt;input name="count" value=""&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;button&gt;Send&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre><a style="position: relative;top: -15px;font-size: 23px;left: 10px;font-weight: 100;"><br>There's no matter which language you use to send the request, javascript is just the most easiest example, you would be better using php's curl for these...</a></div>
+
+
+
+
+</body></html>
